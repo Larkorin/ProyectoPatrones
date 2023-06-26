@@ -5,16 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     public void BotonIncio()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Maps");
     }
 
-    // Update is called once per frame
+    
     public void BotonSalir()
     {
         Debug.Log("Salimos de la aplicación");
             Application.Quit();
+    }
+
+
+    public void BotonRegresar()
+    {
+        SceneManager.LoadScene("MenuPrincipal");
     }
 }
