@@ -9,7 +9,7 @@ public class Jugador : MonoBehaviour
 
     private float horizontal;
     private float speed = 3f;
-    private float jumpingPower = 6f;
+    private float jumpingPower = 7f;
     private bool isFacingRight = false;
     private bool isMoving = false;
 
