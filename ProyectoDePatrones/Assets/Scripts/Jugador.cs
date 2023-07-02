@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Playables;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Jugador : MonoBehaviour
 {
+
     private Animator animator; // Variable para asignar animaciones al jugador
 
     private float horizontal;
     private float speed = 3f;
     private float jumpingPower = 7f;
     private bool isFacingRight = false;
-    private bool isMoving = false;
+    //private bool isMoving = false;
 
     [SerializeField] private Rigidbody2D _rb2D; // Variable para indicar las físicas del jugador
     [SerializeField] private Transform groundCheck;
@@ -22,6 +25,7 @@ public class Jugador : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         _rb2D = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
@@ -74,4 +78,10 @@ public class Jugador : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D limiteInferior)
+    {
+        GameManager.Instance.GameOver();
+    }
+
 }
