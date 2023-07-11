@@ -25,7 +25,6 @@ public class GameInstaller : MonoBehaviour
 
         if (sceneName == "Zona1-nivel3")
         {
-            factoryEnemigo.Create("JefeLaboratorio");
 
         } else if (sceneName == "Zona2-nivel2")
         {
