@@ -1,3 +1,4 @@
+using Assets.Scripts.Decorator;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Playables;
@@ -14,7 +15,8 @@ public class Jugador : MonoBehaviour
     private float speed = 3f;
     private float jumpingPower = 7f;
     private bool isFacingRight = false;
-    //private bool isMoving = false;
+
+
 
     [SerializeField] private Rigidbody2D _rb2D; // Variable para indicar las físicas del jugador
     [SerializeField] private Transform groundCheck;
@@ -27,6 +29,7 @@ public class Jugador : MonoBehaviour
         _rb2D = GetComponent<Rigidbody2D>();
 
     }
+
 
     // Update is called once per frame
     void Update()
@@ -51,15 +54,15 @@ public class Jugador : MonoBehaviour
         {
             animator.SetBool("Caminando", false);
         }
-
+     
+  
         Flip();
+
     }
 
     private void FixedUpdate()
     {
-
             _rb2D.velocity = new Vector2(horizontal * speed, _rb2D.velocity.y);
-
 
     }
 

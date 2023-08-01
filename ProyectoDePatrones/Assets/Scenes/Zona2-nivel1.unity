@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.031318676, g: 0.009558326, b: 0.013197377, a: 1}
+  m_IndirectSpecularColor: {r: 0.031356305, g: 0.009549969, b: 0.0132265445, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3859,6 +3859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 1747677100}
   isGameOver: 0
+  enemigosConfiguration: {fileID: 11400000, guid: da3e85dfca74b304c821dde252047ccf, type: 2}
 --- !u!4 &1021352161
 Transform:
   m_ObjectHideFlags: 0
