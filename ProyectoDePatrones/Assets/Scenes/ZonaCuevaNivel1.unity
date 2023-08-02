@@ -20887,7 +20887,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemigos:
+  - {fileID: 2003388145985403601, guid: 661e039f62cb37d4385312f7ee189559, type: 3}
   - {fileID: 2003388145985403601, guid: 847e026b20a46c44f91727a810771ecc, type: 3}
+  - {fileID: 5233009851040711549, guid: 1e927ede3621117438d2ea0e552c5fbe, type: 3}
+  - {fileID: 2003388145985403601, guid: d618623eb704b024b8ab2b55f70c76ba, type: 3}
   _Canva: {fileID: 0}
   pts:
   - {fileID: 273074386}
