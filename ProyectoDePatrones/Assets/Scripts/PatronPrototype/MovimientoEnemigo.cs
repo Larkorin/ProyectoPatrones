@@ -39,4 +39,8 @@ public class MovimientoEnemigo : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + transform.right * distancia);
     }
+
+
+
+
 }

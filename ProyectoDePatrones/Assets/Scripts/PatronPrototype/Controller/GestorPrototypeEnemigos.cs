@@ -77,4 +77,10 @@ public class GestorPrototypeEnemigos : MonoBehaviour
         return new Vector3(Random.Range(-300, 300), Random.Range(-110, 100), 0f);
 
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("sword"))
+            Debug.Log("lo toco y aqui tengo que destruir");
+    }
 }
