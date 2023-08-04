@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2330424253201492788}
   m_Layer: 0
   m_Name: Aguila
-  m_TagString: Untagged
+  m_TagString: Aguila
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

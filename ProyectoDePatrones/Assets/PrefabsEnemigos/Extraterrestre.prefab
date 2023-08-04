@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5701736736022188036}
   m_Layer: 6
   m_Name: Extraterrestre
-  m_TagString: Untagged
+  m_TagString: Extraterrestre
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -3,26 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-[CreateAssetMenu(fileName = "Nuevo Enemigo", menuName = "ScriptableObjects/Crear Enemigo", order = 1)]
-public class EnemigoNormal : ScriptableObject
+public abstract class EnemigoNormal : MonoBehaviour
 {
-  [SerializeField] Sprite _Sprite;
-        [SerializeField] string _Nombre;
-        [SerializeField] string _Descripcion;
 
-        public Sprite Sprite => _Sprite;
-        public string Nombre => _Nombre;
-        public string Descripcion => _Descripcion;
+    public Habilidad habilidad { get; set; }
+    public string nombre { get; set; }
+    public string descripcion { get; set; }
+    public int cantEnemigo { get; set; }
+    public int cantidadVida { get; set; }
+    public string tagEnemigo  { get; set; }
 
-        private Habilidad habilidad { get; set; }
-    //public Image spriteEnemigo { get; set; }
-    //public float posicion { get; set; }
-    //public Habilidad tipoHabilidad { get; set; }
-    //public string descripcion { get; set; }
+    public EnemigoNormal() { 
+    
+    }
 
-    //public int CantidadVida { get; set; }
-
-    //public Enemigos Clone();
+    public abstract EnemigoNormal Clone(GameObject[] lstEnemigos, Vector2 posicion, Quaternion quaternion);
 
 
 }
