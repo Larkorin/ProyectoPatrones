@@ -53,5 +53,8 @@ public class Ranita : MonoBehaviour
         //return clonedBackpack;
     }
 
-
+    public void Kill()
+    {
+        Destroy(gameObject);
+    }
 }
