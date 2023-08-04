@@ -13,10 +13,13 @@ public class Attack_Controller : MonoBehaviour
     private SinArma _sinArma;
     private AttackerDecorator _swordAttacker;
     private AttackerDecorator _gunAttacker;
-    private int contador = 0;
+    public int contador = 0;
 
-    public GameObject Sword;
-    public GameObject Gun;
+    public GameObject Sword_idle;
+    public GameObject Gun_idle;
+    public GameObject Sword_attack;
+    public GameObject Gun_attack;
+    public GameObject Jugador;
 
     private void Awake() {
         const int damage = 100;
@@ -29,6 +32,7 @@ public class Attack_Controller : MonoBehaviour
     }
     private void Update()
     {
+        //Codigo para sacar las ARMAS
         if (Input.GetKeyDown(KeyCode.F1))
         {
             contador++;
@@ -39,20 +43,55 @@ public class Attack_Controller : MonoBehaviour
             switch (contador)
             {
                 case 1:
-                    Sword.SetActive(true);
+                    Sword_idle.SetActive(true);
                     _swordAttacker.Attack(_damageReceiver);
                     break;
                 case 2:
-                    Sword.SetActive(false);
-                    Gun.SetActive(true);
+                    Sword_idle.SetActive(false);
+                    Gun_idle.SetActive(true);
                     _gunAttacker.Attack(_damageReceiver);
                     break;
                 case 3:
-                    Sword.SetActive(false);
-                    Gun.SetActive(false);
+                    Sword_idle.SetActive(false);
+                    Gun_idle.SetActive(false);
                     break;
                     
             }
         }
+        // Codigo para que el muñeco ataque con ENTER
+        if ((Input.GetKeyDown(KeyCode.Return)))
+        {
+            if (contador == 1)
+            {
+                Sword_idle.SetActive(false);
+                Jugador.GetComponent<SpriteRenderer>().enabled = false;
+                Sword_attack.SetActive(true);
+                
+
+            } else if (contador == 2) {
+                Gun_idle.SetActive(false);
+                Jugador.GetComponent<SpriteRenderer>().enabled = false;
+                Gun_attack.SetActive(true);
+                
+            }
+        }
+        if ((Input.GetKeyUp(KeyCode.Return)))
+        {
+            if (contador == 1)
+            {
+                Sword_idle.SetActive(true);
+                Jugador.GetComponent<SpriteRenderer>().enabled = true;
+                Sword_attack.SetActive(false);
+                
+
+            } else if (contador == 2){
+                Gun_idle.SetActive(true);
+                Jugador.GetComponent<SpriteRenderer>().enabled = true;
+                Gun_attack.SetActive(false);
+               
+
+            }
+        }
+
     }
 }

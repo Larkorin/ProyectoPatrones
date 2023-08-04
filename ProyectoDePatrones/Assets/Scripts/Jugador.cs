@@ -46,16 +46,16 @@ public class Jugador : MonoBehaviour
             _rb2D.velocity = new Vector2(_rb2D.velocity.x, _rb2D.velocity.y * 0.5f);
         }
 
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)|| Input.GetKeyDown(KeyCode.RightArrow))
         {
             animator.SetBool("Caminando", true);
         }
-        else if ((Input.GetKeyUp(KeyCode.D) && !Input.GetKey(KeyCode.A)) || (Input.GetKeyUp(KeyCode.A) && !Input.GetKey(KeyCode.D)))
+        else if ((Input.GetKeyUp(KeyCode.D) && !Input.GetKey(KeyCode.A)) || (Input.GetKeyUp(KeyCode.LeftArrow)) && !Input.GetKey(KeyCode.RightArrow))
         {
             animator.SetBool("Caminando", false);
         }
-     
-  
+        
+
         Flip();
 
     }

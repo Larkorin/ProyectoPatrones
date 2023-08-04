@@ -8,6 +8,7 @@ TagManager:
   - LimiteInferior
   - Ground
   - Block
+  - Enemigo
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Enemigos
   - 
   - 
   - 
