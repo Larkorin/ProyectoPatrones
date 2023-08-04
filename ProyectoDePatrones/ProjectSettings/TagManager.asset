@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GameOverText
   - LimiteInferior
+  - Ground
+  - Block
   layers:
   - Default
   - TransparentFX
@@ -19,8 +21,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Player
+  - Boss
   - 
   - 
   - 
