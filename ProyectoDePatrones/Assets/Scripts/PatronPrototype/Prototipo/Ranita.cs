@@ -34,4 +34,10 @@ public class Ranita : EnemigoNormal
         return new Ranita(this.cantidadVida, this.habilidad.cantidadDannio);
     }
 
+
+    public void Kill()
+    {
+        Destroy(gameObject);
+    }
+
 }

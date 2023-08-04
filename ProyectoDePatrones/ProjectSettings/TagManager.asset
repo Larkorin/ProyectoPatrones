@@ -6,11 +6,14 @@ TagManager:
   tags:
   - GameOverText
   - LimiteInferior
+  - Ground
+  - Block
   - Enemigo
   - Rana
   - Aguila
   - Extraterrestre
   - Dog
+  - Sword
   layers:
   - Default
   - TransparentFX
@@ -18,14 +21,14 @@ TagManager:
   - Ground
   - Water
   - UI
-  - Enemigos
   - 
   - 
   - 
   - 
   - 
   - 
-  - 
+  - Player
+  - Boss
   - 
   - 
   - 

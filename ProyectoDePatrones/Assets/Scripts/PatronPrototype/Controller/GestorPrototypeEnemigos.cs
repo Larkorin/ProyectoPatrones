@@ -69,4 +69,10 @@ public class GestorPrototypeEnemigos : MonoBehaviour
         return posicionAleatoria;
 
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("sword"))
+            Debug.Log("lo toco y aqui tengo que destruir");
+    }
 }

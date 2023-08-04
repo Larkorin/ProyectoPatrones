@@ -44,12 +44,12 @@ public class Attack_Controller : MonoBehaviour
             {
                 case 1:
                     Sword_idle.SetActive(true);
-                    _swordAttacker.Attack(_damageReceiver);
+                    
                     break;
                 case 2:
                     Sword_idle.SetActive(false);
                     Gun_idle.SetActive(true);
-                    _gunAttacker.Attack(_damageReceiver);
+                    
                     break;
                 case 3:
                     Sword_idle.SetActive(false);
@@ -66,13 +66,13 @@ public class Attack_Controller : MonoBehaviour
                 Sword_idle.SetActive(false);
                 Jugador.GetComponent<SpriteRenderer>().enabled = false;
                 Sword_attack.SetActive(true);
-                
+                _swordAttacker.Attack(_damageReceiver);
 
             } else if (contador == 2) {
                 Gun_idle.SetActive(false);
                 Jugador.GetComponent<SpriteRenderer>().enabled = false;
                 Gun_attack.SetActive(true);
-                
+                _gunAttacker.Attack(_damageReceiver);
             }
         }
         if ((Input.GetKeyUp(KeyCode.Return)))

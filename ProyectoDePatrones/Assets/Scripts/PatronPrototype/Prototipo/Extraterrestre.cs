@@ -29,4 +29,6 @@ public class Extraterrestre : EnemigoNormal
 
         return new Extraterrestre(this.cantidadVida, this.habilidad.cantidadDannio);
     }
+
+  
 }

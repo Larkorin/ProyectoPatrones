@@ -29,4 +29,7 @@ public class Aguila : EnemigoNormal
 
         return new Aguila(this.cantidadVida, this.habilidad.cantidadDannio);
     }
+
+ 
+
 }

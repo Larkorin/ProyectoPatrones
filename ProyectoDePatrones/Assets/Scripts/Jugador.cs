@@ -16,8 +16,6 @@ public class Jugador : MonoBehaviour
     private float jumpingPower = 7f;
     private bool isFacingRight = false;
 
-
-
     [SerializeField] private Rigidbody2D _rb2D; // Variable para indicar las físicas del jugador
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -46,11 +44,11 @@ public class Jugador : MonoBehaviour
             _rb2D.velocity = new Vector2(_rb2D.velocity.x, _rb2D.velocity.y * 0.5f);
         }
 
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)|| Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
         {
             animator.SetBool("Caminando", true);
         }
-        else if ((Input.GetKeyUp(KeyCode.D) && !Input.GetKey(KeyCode.A)) || (Input.GetKeyUp(KeyCode.LeftArrow)) && !Input.GetKey(KeyCode.RightArrow))
+        else if ((Input.GetKeyUp(KeyCode.D) && !Input.GetKey(KeyCode.A)))
         {
             animator.SetBool("Caminando", false);
         }
@@ -84,7 +82,9 @@ public class Jugador : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D limiteInferior)
     {
-        GameManager.Instance.GameOver();
+        if (limiteInferior.CompareTag("LimiteInferior"))
+            GameManager.Instance.GameOver();
     }
+
 
 }

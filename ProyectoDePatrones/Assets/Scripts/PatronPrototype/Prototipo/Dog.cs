@@ -28,4 +28,6 @@ public class Dog : EnemigoNormal
 
         return new Dog(this.cantidadVida, this.habilidad.cantidadDannio);
     }
+
+
 }
