@@ -10,9 +10,19 @@ namespace Assets.Scripts.AbstractFactory
     {
         public override string Name { get { return "JefeLaboratorio"; } }
 
+        public override void Attack()
+        {
+            throw new NotImplementedException();
+        }
+
         public override void Process()
         {
             UnityEngine.Debug.Log("estoy adentro de JefeLaboratorio ");
+            throw new NotImplementedException();
+        }
+
+        public override void Run()
+        {
             throw new NotImplementedException();
         }
     }

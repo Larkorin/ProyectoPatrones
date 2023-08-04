@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GameOverText
   - LimiteInferior
+  - Ground
+  - Block
   - Enemigo
   layers:
   - Default
@@ -20,8 +22,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Player
+  - Boss
   - 
   - 
   - 
