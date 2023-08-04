@@ -1,80 +1,72 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class GestorPrototypeEnemigos : MonoBehaviour
 {
-    //int _contador = 0;
-    //int _tope = 5;
+
     public GameObject[] _enemigos;
-    //public List<EnemigoNormal> listEnemigos;
-    public Canvas _Canva;
-    //GameObject[] _NuevosObjetos;
     [SerializeField] private Transform[] pts;
     private float minX, maxX, minY, maxY;
-    //[SerializeField] private float tiempoEnemigos;
     [SerializeField] private int cantEnemigos;
-    private float tiempoSigEnemigo;
-    Ranita ranita =new Ranita();
+    private EnemigoNormal enemigoRana;
+    private EnemigoNormal enemigoAguila;
+    private EnemigoNormal enemigoDog;
+    private EnemigoNormal enemigoExtraterrestre;
 
-
+    public GestorPrototypeEnemigos() {
+        enemigoRana = new Ranita(15,10);
+        enemigoAguila = new Aguila(10,5);
+        enemigoDog= new Dog(20,15);
+        enemigoExtraterrestre = new Extraterrestre(20, 15);
+    }
     void Start()
     {
         maxX = pts.Max(pts => pts.position.x);
         minX = pts.Min(pts => pts.position.x);
         maxY = pts.Max(pts => pts.position.y);
         minY = pts.Min(pts => pts.position.y);
+
         for (int i = 0; i < cantEnemigos; i++)
         {
-            ClonarObjects();
+            nuevoEnemigo();
         }
     }
-    void Update()
+
+    private void nuevoEnemigo()
     {
-        //tiempoSigEnemigo += Time.deltaTime;
+        //Debug.Log("Rana: " + enemigoRana.descripcion + " - Vida: " + enemigoRana.cantidadVida+" daño: "+enemigoRana.habilidad.cantidadDannio);
+        //Debug.Log("Aguila: " + enemigoAguila.descripcion + " - Vida: " + enemigoAguila.cantidadVida + " daño: " + enemigoAguila.habilidad.cantidadDannio);
 
-        //if (tiempoSigEnemigo >= tiempoEnemigos)
-        //{
-        //    Debug.Log("tiempoSigEnemigo: " + tiempoSigEnemigo);
-        //    //tiempoSigEnemigo = 0;
-        //    ClonarObjects();
+        int selectEnemigoRandom=Random.Range(0,_enemigos.Length);
 
-
-
-
-        //}
+        switch (selectEnemigoRandom) { 
+            case 0: 
+                enemigoRana.Clone(_enemigos, posicionEnemigo(), Quaternion.identity);
+                break;
+            case 1:
+                enemigoAguila.Clone(_enemigos, posicionEnemigo(), Quaternion.identity);
+                break;
+            case 3:
+                enemigoDog.Clone(_enemigos, posicionEnemigo(), Quaternion.identity);
+                break;
+            case 4:
+                enemigoExtraterrestre.Clone(_enemigos, posicionEnemigo(), Quaternion.identity);
+                break;
+            default:
+                enemigoExtraterrestre.Clone(_enemigos, posicionEnemigo(), Quaternion.identity);
+                break;
+        }
     }
-    private void ClonarObjects()
-    {
-        //ranita = new Ranita();
 
-        //int randomEnemigos = Random.Range(0, _enemigos.Length);
+    private Vector3 posicionEnemigo()
+    {
         Vector3 posicionAleatoria = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY));
-       
-        //listEnemigos= new List<Enemigos>();
-        //listEnemigos.Add(new Ranita());
-        ranita.Clonar(_enemigos, posicionAleatoria, Quaternion.identity);
-       
-     
-    }
 
-    private GameObject Clonar()
-    {
-        int randomEnemigos = Random.Range(0, _enemigos.Length);
-
-        Vector2 posicionAleatoria = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-
-        // Instantiate(_enemigos[randomEnemigos], posicionAleatoria, Quaternion.identity);
-        GameObject instantiatedObject = Instantiate(_enemigos[randomEnemigos], posicionAleatoria, Quaternion.identity);
-        //instantiatedObject.transform.localPosition = posicion.position;//PosicionNueva();
-        //instantiatedObject.transform.localScale = posicion.localScale;//new Vector3(1f, 1f, 1f);
-        return instantiatedObject;
-    }
-
-    private Vector3 PosicionNueva()
-    {
-        return new Vector3(Random.Range(-300, 300), Random.Range(-110, 100), 0f);
+        return posicionAleatoria;
 
     }
 

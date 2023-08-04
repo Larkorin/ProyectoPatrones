@@ -5,10 +5,10 @@ using UnityEngine;
 public class Colision : Habilidad
 {
 
-    public Colision()
+    public Colision(int cantDannio)
     {
-        this.cantidadDannio = 10;
-        this.descripcionHabilidad = "Ataque de Colision!";
+        this.cantidadDannio = cantDannio;
+        this.descripcionHabilidad = "¡Ataque de Colision!";
     }
 
     

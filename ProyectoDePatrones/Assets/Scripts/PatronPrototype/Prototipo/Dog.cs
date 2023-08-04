@@ -2,18 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dog : MonoBehaviour
+public class Dog : EnemigoNormal
 {
-    // Start is called before the first frame update
-    void Start()
+    public Dog(int cantVida, int cantDannio)
     {
-        
+        this.nombre = "PerroAlien";
+        this.descripcion = "Soy un perror alien y corro rapido";
+        this.cantidadVida = cantVida;
+        this.tagEnemigo = "Dog";
+        this.habilidad = new Colision(cantDannio);
     }
-
-    // Update is called once per frame
-    void Update()
+    public override EnemigoNormal Clone(GameObject[] lstEnemigos, Vector2 posicion, Quaternion quaternion)
     {
-        
+        string gameObjTagEnemigos;
+        for (int i = 0; i < lstEnemigos.Length; i++)
+        {
+            gameObjTagEnemigos = lstEnemigos[i].tag;
+
+            if (gameObjTagEnemigos == tagEnemigo)
+            {
+                Instantiate(lstEnemigos[i], posicion, quaternion);
+            }
+
+        }
+
+        return new Dog(this.cantidadVida, this.habilidad.cantidadDannio);
     }
 
 

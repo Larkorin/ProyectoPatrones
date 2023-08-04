@@ -1,60 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Ranita : MonoBehaviour
+public class Ranita : EnemigoNormal
 {
-    public EnemigoNormal Intrinseco;
-    public Habilidad habilidad;
-    public int Capacidad;
-
-    private Image _spriteImage;
-    private Text _nombreTxt;
-    private Text _DescripcionTxt;
-
-    //AÑADIR DESDE AQUI UN GAME OBJ ENEMIGO SIN ARRAY Y LUEGO VER DONDE ENLAZAR ESTE SCRIPT
-    private void Awake()
+    public Ranita(int cantVida, int cantDannio)
     {
-        _spriteImage = transform.Find("Image").GetComponent<Image>();
-        _nombreTxt = transform.Find("NameText").GetComponent<Text>();
-        _DescripcionTxt = transform.Find("DescriptionText").GetComponent<Text>();
+        this.nombre = "Ranita";
+        this.descripcion = "Soy Rana y Brinco";
+        this.cantidadVida = cantVida;
+        this.tagEnemigo = "Rana";
+        this.habilidad = new Colision(cantDannio);
+    }
+    public override EnemigoNormal Clone(GameObject[] lstEnemigos, Vector2 posicion, Quaternion quaternion)
+    {
+        string gameObjTagEnemigos;
+        for (int i = 0; i < lstEnemigos.Length; i++)
+        {
+            gameObjTagEnemigos = lstEnemigos[i].tag;
 
-        _spriteImage.sprite = Intrinseco.Sprite;
-        _nombreTxt.text = Intrinseco.Nombre;
-        _DescripcionTxt.text = Intrinseco.Descripcion;
+            if (gameObjTagEnemigos == tagEnemigo)
+            {
+                Instantiate(lstEnemigos[i], posicion, quaternion);
+              
+            }
 
-        habilidad = new Colision();
+        }
 
-        //ALÑADIR LOGS AQUI PARA VER QUE DEVUELVEN
+        return new Ranita(this.cantidadVida, this.habilidad.cantidadDannio);
     }
 
-    public Ranita Clonar()
-    {
-        GameObject clonedObject = Instantiate(gameObject, transform.parent);
-        Ranita clonedBackpack = clonedObject.GetComponent<Ranita>();
-
-        clonedBackpack.Intrinseco = Intrinseco;
-        clonedBackpack.Capacidad = Capacidad;
-
-        return clonedBackpack;
-    }
-    public void Clonar(GameObject[] enemigo,Vector2 pos, Quaternion quaternion)
-    {
-        int randomEnemigos = Random.Range(0, enemigo.Length);
-         
-        GameObject clonedObject = Instantiate(enemigo[randomEnemigos],pos, quaternion);
-        //Ranita clonedRanita = clonedObject.GetComponent<Ranita>();
-
-        //clonedRanita.Intrinseco = Intrinseco;
-        //clonedRanita.Capacidad = Capacidad;
-
-        //return clonedBackpack;
-    }
 
     public void Kill()
     {
         Destroy(gameObject);
     }
+
 }
