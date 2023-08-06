@@ -13,7 +13,7 @@ public class Attack_Controller : MonoBehaviour
     private SinArma _sinArma;
     private AttackerDecorator _swordAttacker;
     private AttackerDecorator _gunAttacker;
-    public int contador = 0;
+    private int contador = 0;
 
     public GameObject Sword_idle;
     public GameObject Gun_idle;
@@ -22,7 +22,7 @@ public class Attack_Controller : MonoBehaviour
     public GameObject Jugador;
 
     private void Awake() {
-        const int damage = 100;
+        const int damage = 0;
         const int swordDamage = 20;
         const int gunDamage = 30;
         
@@ -45,11 +45,12 @@ public class Attack_Controller : MonoBehaviour
                 case 1:
                     Sword_idle.SetActive(true);
                     
+                    
                     break;
                 case 2:
                     Sword_idle.SetActive(false);
                     Gun_idle.SetActive(true);
-                    
+                   
                     break;
                 case 3:
                     Sword_idle.SetActive(false);
@@ -68,11 +69,15 @@ public class Attack_Controller : MonoBehaviour
                 Sword_attack.SetActive(true);
                 _swordAttacker.Attack(_damageReceiver);
 
+
+
             } else if (contador == 2) {
                 Gun_idle.SetActive(false);
                 Jugador.GetComponent<SpriteRenderer>().enabled = false;
                 Gun_attack.SetActive(true);
                 _gunAttacker.Attack(_damageReceiver);
+                
+                
             }
         }
         if ((Input.GetKeyUp(KeyCode.Return)))
