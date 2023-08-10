@@ -8,39 +8,17 @@ using UnityEngine;
 
 public class Detector : MonoBehaviour
 {
-    public bool herido { get; set; }
-
-    public Detector(bool herido)
-    {
-        this.herido = herido;
-    }
-
-    public Detector()
-    {
-        //this.herido = herido;
-    }
-
+    public bool herido;
 
 
     private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
         
-        if (collision.CompareTag("Rana"))
+        if (collision.CompareTag("Rana")|| collision.CompareTag("Dog")|| collision.CompareTag("Aguila")|| collision.CompareTag("Extraterrestre"))
         {
             Destroy(collision.gameObject);
         }
 
-        if (collision.CompareTag("Enemigo"))
-        {
-            Debug.Log("Verifico si el boss es herido" + herido);
-            herido = true;
-            Debug.Log("Verifico si cambio el status" + herido);
-
-        }
-
-     
     }
 
-
-   
 }

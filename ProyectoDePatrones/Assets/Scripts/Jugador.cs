@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditor.Playables;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class Jugador : MonoBehaviour
@@ -19,12 +20,18 @@ public class Jugador : MonoBehaviour
     [SerializeField] private Rigidbody2D _rb2D; // Variable para indicar las físicas del jugador
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] Slider sliderVidas;
+    [SerializeField] int vidas;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         _rb2D = GetComponent<Rigidbody2D>();
+        sliderVidas.maxValue = vidas;
+        sliderVidas.value = sliderVidas.maxValue;
 
     }
 
@@ -52,7 +59,7 @@ public class Jugador : MonoBehaviour
         {
             animator.SetBool("Caminando", false);
         }
-        
+
 
         Flip();
 
@@ -60,7 +67,7 @@ public class Jugador : MonoBehaviour
 
     private void FixedUpdate()
     {
-            _rb2D.velocity = new Vector2(horizontal * speed, _rb2D.velocity.y);
+        _rb2D.velocity = new Vector2(horizontal * speed, _rb2D.velocity.y);
 
     }
 
@@ -80,11 +87,36 @@ public class Jugador : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D limiteInferior)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (limiteInferior.CompareTag("LimiteInferior"))
+        if (collision.CompareTag("LimiteInferior"))
+        {
             GameManager.Instance.GameOver();
+        }
+
+        
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.gameObject.tag =="Rana" || collision.gameObject.tag == "Dog" || collision.gameObject.tag == "Aguila" || collision.gameObject.tag == "Extraterrestre")
+        {
+            Debug.Log(vidas);
+            vidas = vidas - 5;
+            sliderVidas.value = vidas;
+        }
+
+        if (collision.gameObject.tag == "Enemigo")
+        {
+            Debug.Log(vidas);
+            vidas = vidas - 10;
+            sliderVidas.value = vidas;
+        }
+        if (vidas == 0)
+        {
+            GameManager.Instance.GameOver();
+        }
+    }
 
 }

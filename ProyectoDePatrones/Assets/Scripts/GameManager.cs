@@ -75,11 +75,8 @@ public class GameManager : MonoBehaviour
 
     private void RestartGame()
     {
-        SceneManager.LoadScene("MenuPrincipal");
+        SceneManager.LoadScene("Maps");
     }
 
-    private void NextLevel()
-    {
 
-    }
 }
