@@ -21,18 +21,15 @@ namespace Assets.Scripts.Decorator
             
         }
 
-        public void ReceiveDamage(int damage, Color color)
+        public void ReceiveDamage(int damage)
         {
-            
-            Debug.Log("El monto a restar es " +damage +"color es "+ color);
-           
-           
+                       
             if (gun.GetComponent<Detector>().herido != false || sword.GetComponent<Detector>().herido != false)
             {
                 LifeEnemy = LifeEnemy - damage;
               
             }                
-            Debug.Log(LifeEnemy);
+
             VidaEnemigoText.SetText(Convert.ToString(LifeEnemy));
           
         }
