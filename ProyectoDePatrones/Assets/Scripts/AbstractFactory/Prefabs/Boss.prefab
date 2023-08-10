@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 4502311058499649926}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -331,6 +331,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 4502311058499649926}
   isFlipped: 0
+  speed: 1
+  attackRange: 1.1
+  rb: {fileID: 0}
 --- !u!212 &4502311058499649926
 SpriteRenderer:
   m_ObjectHideFlags: 0

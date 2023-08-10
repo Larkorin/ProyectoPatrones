@@ -11,7 +11,7 @@ namespace Assets.Scripts.Decorator
 
         public void Attack(IDamageReceiver damageReceiver)
         {
-            damageReceiver.ReceiveDamage(_damage, Color.white);
+            damageReceiver.ReceiveDamage(_damage);
         }
     }
 }

@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 346675a256bc26742a5c5dc2d401ecc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 6
+  velocidadMovimiento: 3
   distancia: 2
   capaSuelo:
     serializedVersion: 2

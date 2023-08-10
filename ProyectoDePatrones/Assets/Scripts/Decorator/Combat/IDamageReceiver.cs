@@ -5,6 +5,6 @@ namespace Assets.Scripts.Decorator
 {
     public interface IDamageReceiver
     {
-        void ReceiveDamage(int damage, Color color);
+        void ReceiveDamage(int damage);
     }
 }
