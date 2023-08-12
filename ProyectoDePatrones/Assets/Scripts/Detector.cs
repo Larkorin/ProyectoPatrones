@@ -8,17 +8,38 @@ using UnityEngine;
 
 public class Detector : MonoBehaviour
 {
-    public bool herido;
+    public bool herido { get; set; }
+    public bool bandera { get; set; }
+
+
+
+
+    public Detector()
+    {
+        //this.herido = herido;
+    }
+
 
 
     private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
-        
-        if (collision.CompareTag("Rana")|| collision.CompareTag("Dog")|| collision.CompareTag("Aguila")|| collision.CompareTag("Extraterrestre"))
+
+        if (collision.CompareTag("Rana"))
         {
             Destroy(collision.gameObject);
         }
 
-    }
 
+
+        if (collision.CompareTag("Player"))
+        {
+
+            bandera = true;
+            Debug.Log("bandera" + bandera);
+
+        }
+
+
+
+    }
 }
