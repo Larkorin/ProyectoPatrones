@@ -24,7 +24,7 @@ public class Detector : MonoBehaviour
     private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
 
-        if (collision.CompareTag("Rana"))
+        if (collision.CompareTag("Rana")|| (collision.CompareTag("Aguila")||(collision.CompareTag("Extraterrestre")|| (collision.CompareTag("Dog")))))
         {
             Destroy(collision.gameObject);
         }
