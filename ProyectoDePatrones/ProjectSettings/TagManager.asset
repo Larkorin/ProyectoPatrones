@@ -15,6 +15,7 @@ TagManager:
   - Dog
   - Sword
   - Protect
+  - TextoBoss
   layers:
   - Default
   - TransparentFX
