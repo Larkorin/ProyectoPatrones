@@ -57,7 +57,10 @@ public class Jugador : MonoBehaviour
         {
             animator.SetBool("Caminando", true);
         }
-        else if ((Input.GetKeyUp(KeyCode.D) && !Input.GetKey(KeyCode.A)))
+        else if ((Input.GetKeyUp(KeyCode.D) && !Input.GetKeyUp(KeyCode.A)))
+        {
+            animator.SetBool("Caminando", false);
+        } else if ((Input.GetKeyUp(KeyCode.A) && !Input.GetKeyUp(KeyCode.D)))
         {
             animator.SetBool("Caminando", false);
         }

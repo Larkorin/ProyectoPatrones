@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2160931645085924016}
   - component: {fileID: -2705108836113696725}
   - component: {fileID: 5701736736022188036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Extraterrestre
   m_TagString: Extraterrestre
   m_Icon: {fileID: 0}
