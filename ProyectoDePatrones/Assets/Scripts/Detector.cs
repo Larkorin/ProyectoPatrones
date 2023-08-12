@@ -11,10 +11,6 @@ public class Detector : MonoBehaviour
     public bool herido { get; set; }
     public bool bandera { get; set; }
 
-    public Detector(bool herido)
-    {
-        this.herido = herido;
-    }
 
 
 
@@ -31,14 +27,6 @@ public class Detector : MonoBehaviour
         if (collision.CompareTag("Rana"))
         {
             Destroy(collision.gameObject);
-        }
-
-        if (collision.CompareTag("Enemigo"))
-        {
-            Debug.Log("Verifico si el boss es herido" + herido);
-            herido = true;
-            Debug.Log("Verifico si cambio el status" + herido);
-
         }
 
 

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2160931645085924016}
   - component: {fileID: -2705108836113696725}
   - component: {fileID: 1983933556324969100}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rana
   m_TagString: Rana
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadMovimiento: 5
-  distancia: 2
+  distancia: 1
   capaSuelo:
     serializedVersion: 2
     m_Bits: 8

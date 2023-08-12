@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2160931645085924016}
   - component: {fileID: -2705108836113696725}
   - component: {fileID: 1983933556324969100}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dog
   m_TagString: Dog
   m_Icon: {fileID: 0}
@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 346675a256bc26742a5c5dc2d401ecc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 6
-  distancia: 2
+  velocidadMovimiento: 3
+  distancia: 1
   capaSuelo:
     serializedVersion: 2
     m_Bits: 8

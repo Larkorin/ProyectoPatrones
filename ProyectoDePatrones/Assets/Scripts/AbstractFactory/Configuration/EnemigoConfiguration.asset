@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: EnemigoConfiguration
   m_EditorClassIdentifier: 
   enemigos:
-  - {fileID: 3328491681726176029, guid: bb4167f664e90174b8c422386b4312fd, type: 3}
-  - {fileID: 1070679116217446569, guid: b911c3f09b5186a43aa8a14ffba8cde3, type: 3}
-  - {fileID: 7791376516317062921, guid: c9304f1ec2addf540bbba6ed203a04d0, type: 3}
+  - {fileID: 4504916514442469723, guid: 27809ce74ce41b04995a21cff98cf1f9, type: 3}
+  - {fileID: 2362320861934753060, guid: 93136647850eca74c9efd365966ff846, type: 3}
+  - {fileID: 9044434424034494790, guid: 6bf8efad6035fd74db8db9f205e883bd, type: 3}

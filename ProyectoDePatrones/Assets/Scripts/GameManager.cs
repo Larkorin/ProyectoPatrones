@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         var factoryEnemigo = new EnemigoFactory(Instantiate(enemigosConfiguration)); //Instancia la configuración de enemigos
         string sceneName = currentScene.name; //Obtiene el nombre de la escena
 
-        if (sceneName == "Zona1-nivel3") //Si el nombre de la escena coincide con la indicada
+        if (sceneName == "Zona1-Nivel1") //Si el nombre de la escena coincide con la indicada
         {
             factoryEnemigo.Create("JefeLaboratorio");//Crea el objeto desde la fabrica abstracta
         }
@@ -75,11 +75,8 @@ public class GameManager : MonoBehaviour
 
     private void RestartGame()
     {
-        SceneManager.LoadScene("MenuPrincipal");
+        SceneManager.LoadScene("Maps");
     }
 
-    private void NextLevel()
-    {
 
-    }
 }
