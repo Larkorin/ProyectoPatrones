@@ -22,6 +22,7 @@ public class Jugador : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] Slider sliderVidas;
     [SerializeField] int vidas;
+    [SerializeField] private GameObject DatosEnemigo;
 
 
 
@@ -32,6 +33,7 @@ public class Jugador : MonoBehaviour
         _rb2D = GetComponent<Rigidbody2D>();
         sliderVidas.maxValue = vidas;
         sliderVidas.value = sliderVidas.maxValue;
+        DatosEnemigo.SetActive(false);
 
     }
 
@@ -97,7 +99,10 @@ public class Jugador : MonoBehaviour
             GameManager.Instance.GameOver();
         }
 
-        
+        if (collision.CompareTag("TextoBoss"))
+        {
+            DatosEnemigo.SetActive(true);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -120,6 +125,9 @@ public class Jugador : MonoBehaviour
         {
             GameManager.Instance.GameOver();
         }
+
+
     }
 
+ 
 }

@@ -28,6 +28,13 @@ public class Detector : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+        if (collision.CompareTag("Enemigo"))
+        {
+           herido = true;
+
+           
+        }
+
 
 
 

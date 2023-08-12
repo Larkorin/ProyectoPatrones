@@ -18,8 +18,9 @@ namespace Assets.Scripts.Decorator
         public void Start()
         {
             VidaEnemigoText.SetText("500");
-            
+           
         }
+
 
         public void ReceiveDamage(int damage)
         {
@@ -34,7 +35,7 @@ namespace Assets.Scripts.Decorator
           
         }
 
-        
+
 
 
     }

@@ -9,6 +9,7 @@ namespace Assets.Scripts.State
     {
         [SerializeField] private TextMeshProUGUI VidaEnemigoText;
         [SerializeField] private TextMeshProUGUI VidaEnemigoDescripcion;
+      
         private Estado _estado;
         
         public Switch()
@@ -27,7 +28,7 @@ namespace Assets.Scripts.State
             if (valor <= 0)
             {
                 _estado.ControlarEstado(this);
-                Debug.Log(_estado.Describir());
+                //Debug.Log(_estado.Describir());
                 VidaEnemigoText.enabled = false;
                 VidaEnemigoDescripcion.enabled = false;
             }
@@ -37,7 +38,7 @@ namespace Assets.Scripts.State
 
         public void DestroyObject()
         {
-            Debug.Log(_estado.Describir());
+            //Debug.Log(_estado.Describir());
             if (_estado.Describir() == "Muerto" ) {
                 Destroy(this.gameObject);
             }
