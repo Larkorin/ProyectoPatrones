@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEditor.PlayerSettings;
 
@@ -13,15 +14,8 @@ namespace Assets.Scripts.State
         [SerializeField] TextMeshProUGUI VidaEnemigoDescripcion;
         //public GameObject Enemigo;
         private Estado _estado;
-        private GameObject[] gos;
 
 
-        public void Start()
-        {
-            gos = GameObject.FindGameObjectsWithTag("Enemigo");
-           
-
-        }
         public Switch()
         {
             _estado = new Vivo();
@@ -52,8 +46,8 @@ namespace Assets.Scripts.State
             
             if (_estado.Describir() == "Muerto" ) {
 
-                foreach (GameObject go in gos)
-                    Destroy(go);
+                
+                    Destroy(GameObject.FindGameObjectWithTag("Enemigo"));
 
             }
 

@@ -8,17 +8,8 @@ using UnityEngine;
 
 public class Detector : MonoBehaviour
 {
-    public bool herido { get; set; }
+    public bool herido; 
     public bool bandera { get; set; }
-
-
-
-
-    public Detector()
-    {
-        //this.herido = herido;
-    }
-
 
 
     private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
@@ -31,11 +22,7 @@ public class Detector : MonoBehaviour
         if (collision.CompareTag("Enemigo"))
         {
            herido = true;
-
-           
         }
-
-
 
 
         if (collision.CompareTag("Player"))
