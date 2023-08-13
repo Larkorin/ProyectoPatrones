@@ -299,7 +299,6 @@ GameObject:
   - component: {fileID: 5675085283617144655}
   - component: {fileID: 2362320861934753060}
   - component: {fileID: 6508036863625161245}
-  - component: {fileID: 6327925499701622210}
   m_Layer: 13
   m_Name: JefeBosque
   m_TagString: Enemigo
@@ -323,7 +322,7 @@ Transform:
   - {fileID: 8537652998998877189}
   - {fileID: 1522262948013997837}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &3814663101668979181
 Animator:
@@ -500,20 +499,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6327925499701622210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7350098558356221299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b1d8659bf8facd44a6f1ae66ddc5820, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  VidaEnemigoText: {fileID: 0}
-  VidaEnemigoDescripcion: {fileID: 0}
 --- !u!1 &8251635851319826665
 GameObject:
   m_ObjectHideFlags: 0
