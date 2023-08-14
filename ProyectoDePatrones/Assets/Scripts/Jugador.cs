@@ -124,6 +124,7 @@ public class Jugador : MonoBehaviour
         if (vidas == 0)
         {
             GameManager.Instance.GameOver();
+            Destroy(this.gameObject);
         }
 
 
