@@ -1,3 +1,5 @@
+using Assets.Scripts.Adapter;
+using Assets.Scripts.Adapter.Adaptados;
 using Assets.Scripts.Decorator;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,6 +7,7 @@ using UnityEditor.Playables;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 
 public class Jugador : MonoBehaviour
@@ -16,14 +19,16 @@ public class Jugador : MonoBehaviour
     private float speed = 3f;
     private float jumpingPower = 7f;
     private bool isFacingRight = false;
-
+    private ConsoleController consoleController;
+    private IController teclado;
+    private IController control;
+    private InputControl activeControl { get; }
     [SerializeField] private Rigidbody2D _rb2D; // Variable para indicar las físicas del jugador
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] Slider sliderVidas;
     [SerializeField] int vidas;
     [SerializeField] private GameObject DatosEnemigo;
-
 
 
     // Start is called before the first frame update
@@ -34,37 +39,62 @@ public class Jugador : MonoBehaviour
         sliderVidas.maxValue = vidas;
         sliderVidas.value = sliderVidas.maxValue;
         DatosEnemigo.SetActive(false);
+        teclado = new KeyboardMouseController();
+        consoleController = new ConsoleController();
+        control = new ConsoleControllerAdaptador(consoleController);
 
     }
 
 
     // Update is called once per frame
     void Update()
-    {
-        horizontal = Input.GetAxisRaw("Horizontal");
+    {        
+        Gamepad gamepad = Gamepad.current;
+        Keyboard keyboard = Keyboard.current;
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (keyboard != null)
         {
-            _rb2D.velocity = new Vector2(_rb2D.velocity.x, jumpingPower);
+            horizontal = teclado.GetHorizontalInput();
+            if (teclado.IsJumpButtonDown() && IsGrounded())
+            {
+                _rb2D.velocity = new Vector2(_rb2D.velocity.x, jumpingPower);
+            }
+
+            if (teclado.IsJumpButtonUp() && _rb2D.velocity.y > 0f)
+            {
+                _rb2D.velocity = new Vector2(_rb2D.velocity.x, _rb2D.velocity.y * 0.5f);
+            }
+            if (horizontal != 0)
+            {
+                animator.SetBool("Caminando", true);
+            }
+            else
+            {
+                animator.SetBool("Caminando", false);
+            }
         }
 
-        if (Input.GetButtonUp("Jump") && _rb2D.velocity.y > 0f)
+        if (gamepad != null && (gamepad.leftStick.ReadValue() != Vector2.zero || gamepad.buttonWest.isPressed || gamepad.buttonSouth.isPressed))
         {
-            _rb2D.velocity = new Vector2(_rb2D.velocity.x, _rb2D.velocity.y * 0.5f);
-        }
+            horizontal = control.GetHorizontalInput();
+            if (control.IsJumpButtonDown() && IsGrounded())
+            {
+                _rb2D.velocity = new Vector2(_rb2D.velocity.x, jumpingPower);
+            }
 
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
-        {
-            animator.SetBool("Caminando", true);
+            if (control.IsJumpButtonUp() && _rb2D.velocity.y > 0f)
+            {
+                _rb2D.velocity = new Vector2(_rb2D.velocity.x, _rb2D.velocity.y * 0.5f);
+            }
+            if (horizontal != 0 || gamepad.leftStick.ReadValue() == Vector2.zero)
+            {
+                animator.SetBool("Caminando", true);
+            }
+            else
+            {
+                animator.SetBool("Caminando", false);
+            }
         }
-        else if ((Input.GetKeyUp(KeyCode.D) && !Input.GetKeyUp(KeyCode.A)))
-        {
-            animator.SetBool("Caminando", false);
-        } else if ((Input.GetKeyUp(KeyCode.D) && !Input.GetKeyUp(KeyCode.A)))
-        {
-            animator.SetBool("Caminando", false);
-        }
-
 
         Flip();
 
@@ -121,6 +151,7 @@ public class Jugador : MonoBehaviour
             vidas = vidas - 10;
             sliderVidas.value = vidas;
         }
+
         if (vidas == 0)
         {
             GameManager.Instance.GameOver();

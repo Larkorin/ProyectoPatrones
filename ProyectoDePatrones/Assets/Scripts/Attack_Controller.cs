@@ -34,7 +34,7 @@ public class Attack_Controller : MonoBehaviour
     {
         //Codigo para sacar las ARMAS
         if (Input.GetKeyDown(KeyCode.F1))
-        {
+        { 
             contador++;
             if (contador > 3)
             {
