@@ -15,6 +15,7 @@ namespace Assets.Scripts.Decorator.Decorado
         public override void Attack(IDamageReceiver damageReceiver)
         {
             base.Attack(damageReceiver);
+           
             damageReceiver.ReceiveDamage(_swordDamage);
         }
     }
