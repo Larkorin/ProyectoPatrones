@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Zona2-nivel2.unity
     guid: 3c50a69cbf25f804690958f16dd34a53
+  - enabled: 1
+    path: Assets/Scenes/MapaZona2.unity
+    guid: a7bb5dd9e8f0ec64eb260b91b391d591
   m_configObjects: {}

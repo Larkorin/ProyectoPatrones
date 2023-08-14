@@ -1082,6 +1082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258c2e7ba1a606044b21cec877cbb7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  herido: 0
 --- !u!61 &168860063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1561,7 +1562,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252589012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.21, y: 2.75, z: 0}
+  m_LocalPosition: {x: -93.67, y: 1.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2374,7 +2375,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356276818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.205715, y: 0.2937026, z: -10}
+  m_LocalPosition: {x: -86.00127, y: -0.06611478, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2494,6 +2495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258c2e7ba1a606044b21cec877cbb7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  herido: 0
 --- !u!4 &389456973
 Transform:
   m_ObjectHideFlags: 0
@@ -20354,6 +20356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258c2e7ba1a606044b21cec877cbb7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  herido: 0
 --- !u!114 &1571466515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22920,6 +22923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258c2e7ba1a606044b21cec877cbb7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  herido: 0
 --- !u!95 &1911384251
 Animator:
   serializedVersion: 5
@@ -23870,7 +23874,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034271044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.21, y: 2.75, z: -10}
+  m_LocalPosition: {x: -93.67, y: 1.68, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23993,6 +23997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258c2e7ba1a606044b21cec877cbb7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  herido: 0
 --- !u!61 &2074799280
 BoxCollider2D:
   m_ObjectHideFlags: 0
