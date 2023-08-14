@@ -216,7 +216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 19600188}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Guns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 94478495}
   - component: {fileID: 94478497}
   - component: {fileID: 94478496}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: sword_side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -859,7 +859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 135079610}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: gun_idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1063,7 +1063,7 @@ GameObject:
   - component: {fileID: 168860064}
   - component: {fileID: 168860063}
   - component: {fileID: 168860062}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: weapon_sword_side
   m_TagString: Sword
   m_Icon: {fileID: 0}
@@ -1508,7 +1508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 240353109}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1547,7 +1547,7 @@ GameObject:
   - component: {fileID: 252589016}
   - component: {fileID: 252589015}
   - component: {fileID: 252589014}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Jugador
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2228,7 +2228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 324542723}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: gun_attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3212,7 +3212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 481281645}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3243,7 +3243,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 490017268}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: sword_idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3612,7 +3612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 532191478}
   - component: {fileID: 532191479}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: gun_side_cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4031,7 +4031,7 @@ GameObject:
   - component: {fileID: 630387663}
   - component: {fileID: 630387665}
   - component: {fileID: 630387664}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: sword_attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4728,7 +4728,7 @@ GameObject:
   - component: {fileID: 816747345}
   - component: {fileID: 816747347}
   - component: {fileID: 816747346}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: sword_side_cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5122,7 +5122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 852282624}
   - component: {fileID: 852282625}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6372,7 +6372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1039519770}
   - component: {fileID: 1039519771}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: sword_sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17656,7 +17656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1089442215}
   - component: {fileID: 1089442216}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: gun_sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17938,7 +17938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1155424409}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19468,7 +19468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1403611262}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20080,136 +20080,6 @@ Transform:
   m_Father: {fileID: 298245971}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1554638527
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1554638528}
-  - component: {fileID: 1554638530}
-  - component: {fileID: 1554638529}
-  m_Layer: 7
-  m_Name: tileset_9 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1554638528
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554638527}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -84.86656, y: -3.9550726, z: 0.3381351}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1594327621}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1554638529
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554638527}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.28645897, y: 0.9512552}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.44870377, y: 2.902511}
-  m_EdgeRadius: 0
---- !u!212 &1554638530
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554638527}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300018, guid: 2eeb0d4e8888f48459040781a511455e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1554780656
 GameObject:
   m_ObjectHideFlags: 0
@@ -20219,7 +20089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1554780657}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20517,7 +20387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1594327621}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bordes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20537,7 +20407,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 316242352}
-  - {fileID: 1554638528}
   - {fileID: 1205538212}
   - {fileID: 606973633}
   - {fileID: 875512384}
@@ -22844,7 +22713,7 @@ GameObject:
   - component: {fileID: 1911384251}
   - component: {fileID: 1911384250}
   - component: {fileID: 1911384249}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: muzzleflash_gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23091,7 +22960,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1939086874}
   - component: {fileID: 1939086875}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: gun_side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23874,7 +23743,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034271044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+
   m_LocalPosition: {x: -93.67, y: 1.68, z: -10}
+
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24120,7 +23991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2078205527}
   - component: {fileID: 2078205528}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24406,7 +24277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2110176648}
   - component: {fileID: 2110176649}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: weapon_gun_side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
