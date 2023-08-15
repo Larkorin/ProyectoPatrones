@@ -15048,7 +15048,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 63, y: -9}
+  m_AnchoredPosition: {x: 51.1, y: -5.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1311116630
@@ -15071,7 +15071,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pueblo
+  m_text: 1.Pueblo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f54bdb477b80e445a42fc1015b04cf1, type: 2}
   m_sharedMaterial: {fileID: -1552759354294395247, guid: 4f54bdb477b80e445a42fc1015b04cf1, type: 2}
@@ -15966,8 +15966,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249.8, y: -55.9}
-  m_SizeDelta: {x: 158.8027, y: 45.0863}
+  m_AnchoredPosition: {x: -249.107, y: -43.483833}
+  m_SizeDelta: {x: 213.4382, y: 104.6841}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1498519664
 MonoBehaviour:
@@ -16870,7 +16870,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: -9}
+  m_AnchoredPosition: {x: 0.3, y: -6.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1913997394
@@ -16893,7 +16893,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Laboratorio
+  m_text: 2.Laboratorio
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f54bdb477b80e445a42fc1015b04cf1, type: 2}
   m_sharedMaterial: {fileID: -1552759354294395247, guid: 4f54bdb477b80e445a42fc1015b04cf1, type: 2}
@@ -16956,7 +16956,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -26.036255, y: 0, z: 0, w: 0}
+  m_margin: {x: -26.036255, y: 0, z: -29.02124, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -17619,8 +17619,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 293, y: -142.8}
-  m_SizeDelta: {x: 302.1011, y: 48.9623}
+  m_AnchoredPosition: {x: 288.6028, y: -128.14279}
+  m_SizeDelta: {x: 370.697, y: 119.3171}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2097171079
 MonoBehaviour:

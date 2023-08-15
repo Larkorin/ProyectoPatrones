@@ -775,7 +775,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bosque  Vi'ru
+  m_text: 2.Bosque  Vi'ru
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f54bdb477b80e445a42fc1015b04cf1, type: 2}
   m_sharedMaterial: {fileID: -1552759354294395247, guid: 4f54bdb477b80e445a42fc1015b04cf1, type: 2}
@@ -973,8 +973,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -571.1625, y: -154.95245}
-  m_SizeDelta: {x: 240.8742, y: 59.4061}
+  m_AnchoredPosition: {x: -587.61633, y: -171.52374}
+  m_SizeDelta: {x: 276.6677, y: 122.0724}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &947722401
 MonoBehaviour:
@@ -1280,7 +1280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bosque  Na\xB4 ta"
+  m_text: "1.Bosque  Na\xB4 ta"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f54bdb477b80e445a42fc1015b04cf1, type: 2}
   m_sharedMaterial: {fileID: -1552759354294395247, guid: 4f54bdb477b80e445a42fc1015b04cf1, type: 2}
@@ -1486,8 +1486,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 333.3025, y: 106.97754}
-  m_SizeDelta: {x: 281.2026, y: 62.8394}
+  m_AnchoredPosition: {x: 333.3025, y: 148.3}
+  m_SizeDelta: {x: 281.2026, y: 130.7342}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612658646
 MonoBehaviour:
