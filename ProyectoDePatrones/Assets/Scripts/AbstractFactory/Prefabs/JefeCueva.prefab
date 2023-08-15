@@ -848,7 +848,6 @@ GameObject:
   - component: {fileID: 827149878003335013}
   - component: {fileID: 8793779392623050972}
   - component: {fileID: 2011949815159545063}
-  - component: {fileID: 1455793564344109668}
   - component: {fileID: 3365583319191126266}
   - component: {fileID: 9044434424034494790}
   m_Layer: 13
@@ -976,20 +975,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1455793564344109668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470448809151253238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b1d8659bf8facd44a6f1ae66ddc5820, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  VidaEnemigoText: {fileID: 0}
-  VidaEnemigoDescripcion: {fileID: 0}
 --- !u!212 &3365583319191126266
 SpriteRenderer:
   m_ObjectHideFlags: 0

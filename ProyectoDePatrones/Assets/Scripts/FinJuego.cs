@@ -1,37 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class FinJuego : MonoBehaviour
 {
-
-    public GameObject PanelNPC;
-    public GameObject PanelNPC2;
-
+    [SerializeField] private GameObject Panel;
+    private bool check;
 
     private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
 
-
         if (collision.CompareTag("Player"))
-        {
-            ActivarPanel();
-            ActivarTexto();
-
+        {      
+            GameManager.Instance.GameOver();
+            check = true;
+     
         }
 
     }
 
+    void Update()
+    {
+        if (check == true)
+        {
+            Invoke("ActivarPanel", 0f);
+        }
+        
+    }
 
+    // Update is called once per frame
     void ActivarPanel()
     {
-        PanelNPC.SetActive(true);
+        Panel.SetActive(true);
     }
-
-    void ActivarTexto()
-    {
-        PanelNPC2.SetActive(true);
-    }
-
 
 }
