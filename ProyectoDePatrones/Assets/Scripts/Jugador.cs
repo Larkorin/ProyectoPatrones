@@ -97,7 +97,10 @@ public class Jugador : MonoBehaviour
         }
 
         Flip();
-
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MenuPrincipal");
+        }
     }
 
     private void FixedUpdate()
