@@ -721,7 +721,7 @@ Transform:
   m_GameObject: {fileID: 2175518728740902882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 67.848, y: -2.606, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2833012095245502120}
@@ -897,7 +897,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 2098022204790826540}
   isFlipped: 0
   speed: 1.6
-  attackRange: 1.1
+  attackRange: 1.5
   rb: {fileID: 0}
 --- !u!1 &2187042111964294045
 GameObject:
