@@ -30,9 +30,9 @@ namespace Assets.Scripts.Decorator
             
             if (gun.GetComponent<Detector>().herido != false || sword.GetComponent<Detector>().herido != false)
             {
-                Debug.Log(damage + "dano hecho");
+         
                 LifeEnemy = LifeEnemy - damage;
-                Debug.Log("Entre al if");
+      
 
             }                
 
