@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IObservador
 {
-    void update();
+    void update(ISujeto sujeto);
 }
