@@ -11,17 +11,17 @@ namespace Assets.Scripts.Adapter
     {
         public float GetHorizontalInput()
         {
-            return Input.GetAxisRaw("Horizontal");
+            return Input.GetAxisRaw("Horizontal"); //Revisa el movimiento horizontal
         }
 
         public bool IsJumpButtonDown()
         {
-            return Input.GetButtonDown("Jump");
+            return Input.GetButtonDown("Jump"); //Revisa si se esta presionando el boton de saltar
         }
 
         public bool IsJumpButtonUp()
         {
-            return Input.GetButtonUp("Jump");
+            return Input.GetButtonUp("Jump"); //Revisa si se para de presional el boton se saltar
         }
     }
 }

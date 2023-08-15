@@ -7,51 +7,67 @@ public class GestorObservador : MonoBehaviour
 {
 
     [SerializeField] private float tiempoMax;
-    private float tiempoAct;
-    private bool tiempoActivo = false;
+    //private float tiempoAct;
+    //private bool tiempoActivo = false;
     [SerializeField] private Slider slider;
-    // Start is called before the first frame update
+    [SerializeField] private GameManager _gameManager;
+
+
+    [SerializeField] private ObservadorConcreto _observadorTime;
+    private SujetoConcreto _sujetoConcreto; 
+    
+    private void Awake()
+    {
+        _sujetoConcreto=new SujetoConcreto();
+        _sujetoConcreto.addObserver(_observadorTime);
+    }
+
     void Start()
     {
-        activarTemp();
+        _sujetoConcreto.activarTemp(tiempoMax,slider);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (tiempoActivo) {
-            actualizaTemporizador();
+        if (_sujetoConcreto.tiempoActivo) {
+            _sujetoConcreto.actualizaTemporizador(slider,_gameManager);
         }
+
+        //if (Input.GetKeyUp(KeyCode.Q)) {
+        //    _sujetoConcreto.aplicarTiempo(10);
+        //}
+
     }
 
-    private void actualizaTemporizador() {
-        tiempoAct -= Time.deltaTime;
+    //private void actualizaTemporizador() {
+    //    tiempoAct -= Time.deltaTime;
 
-        if (tiempoAct>=0) { 
-            slider.value = tiempoAct;
-        }
+    //    if (tiempoAct>=0) { 
+    //        slider.value = tiempoAct;
+    //    }
 
-        if (tiempoAct <= 0)
-        {
-            Debug.Log("Tiempo ha Terminado");
-           actualizaEstadoTemp(false);
-        }
-    }
+    //    if (tiempoAct <= 0)
+    //    {
+    //        Debug.Log("Tiempo ha Terminado");
+    //       actualizaEstadoTemp(false);
+    //    }
+    //}
 
 
-    private void actualizaEstadoTemp(bool status) { 
-        tiempoActivo= status;
+    //private void actualizaEstadoTemp(bool status) { 
+    //    tiempoActivo= status;
     
-    }
+    //}
 
-    private void activarTemp() { 
-        tiempoAct= tiempoMax;
-        slider.maxValue= tiempoMax;
-        actualizaEstadoTemp(true);
-    }
+    //private void activarTemp() { 
+    //    tiempoAct= tiempoMax;
+    //    slider.maxValue= tiempoMax;
+    //    _sujetoConcreto.actualizaEstadoTemp(true);
+    //}
 
-    private void desactivarTemp()
-    {
-        actualizaEstadoTemp(false);
-    }
+    //private void desactivarTemp()
+    //{
+    //    _sujetoConcreto.actualizaEstadoTemp(false);
+    //}
 }
