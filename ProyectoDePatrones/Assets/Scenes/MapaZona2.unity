@@ -1280,7 +1280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bosque Na\xB4 ta"
+  m_text: "Bosque  Na\xB4 ta"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f54bdb477b80e445a42fc1015b04cf1, type: 2}
   m_sharedMaterial: {fileID: -1552759354294395247, guid: 4f54bdb477b80e445a42fc1015b04cf1, type: 2}

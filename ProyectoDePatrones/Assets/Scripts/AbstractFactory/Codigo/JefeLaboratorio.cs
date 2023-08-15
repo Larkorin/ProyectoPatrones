@@ -29,16 +29,6 @@ namespace Assets.Scripts.AbstractFactory
             animator = GetComponent<Animator>();
             animator.SetTrigger("Attack");
             isAttacking = true;
-
-            //Meter funcionalidad que hace daño al jugador
-        }
-
-        public override void Process() //No se usa
-        {
-            //this.context = new Context(this);
-
-            UnityEngine.Debug.Log("estoy adentro de JefeLaboratorio ");
-            throw new NotImplementedException();
         }
 
         public override void Run() //Funcion de correr
