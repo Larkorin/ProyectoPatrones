@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemigos:
   - {fileID: 4504916514442469723, guid: 27809ce74ce41b04995a21cff98cf1f9, type: 3}
-  - {fileID: 2362320861934753060, guid: 93136647850eca74c9efd365966ff846, type: 3}
+  - {fileID: 283901115535741839, guid: 229e9d8f80f3f7a4f90053130acd8898, type: 3}
   - {fileID: 9044434424034494790, guid: 6bf8efad6035fd74db8db9f205e883bd, type: 3}
