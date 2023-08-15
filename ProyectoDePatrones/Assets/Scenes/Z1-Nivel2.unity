@@ -2059,6 +2059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258c2e7ba1a606044b21cec877cbb7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  herido: 0
 --- !u!95 &201937373
 Animator:
   serializedVersion: 5
@@ -2303,6 +2304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258c2e7ba1a606044b21cec877cbb7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  herido: 0
 --- !u!61 &224246999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3337,6 +3339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258c2e7ba1a606044b21cec877cbb7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  herido: 0
 --- !u!114 &287048702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3892,7 +3895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8709bc7fc2909354c8c3ed7a9007bd20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverText: {fileID: 0}
+  gameOverText: {fileID: 355697531}
   isGameOver: 0
   enemigosConfiguration: {fileID: 11400000, guid: da3e85dfca74b304c821dde252047ccf, type: 2}
 --- !u!4 &347096944
@@ -4140,7 +4143,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -593.96796, y: 0, z: -523.8015, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11014,7 +11017,7 @@ SpriteRenderer:
   m_Size: {x: 40.96, y: 20.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &957875318
@@ -11519,6 +11522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258c2e7ba1a606044b21cec877cbb7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  herido: 0
 --- !u!61 &1004032401
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11791,6 +11795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258c2e7ba1a606044b21cec877cbb7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  herido: 0
 --- !u!61 &1029494338
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12799,6 +12804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258c2e7ba1a606044b21cec877cbb7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  herido: 0
 --- !u!4 &1122243004
 Transform:
   m_ObjectHideFlags: 0
@@ -14435,6 +14441,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4106967144069191872, guid: 7fc30cd74f5aa724387df7546e0f3d5b, type: 3}
   m_PrefabInstance: {fileID: 1303251935}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1315652101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1315652103}
+  - component: {fileID: 1315652102}
+  m_Layer: 0
+  m_Name: Switch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1315652102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315652101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1d8659bf8facd44a6f1ae66ddc5820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VidaEnemigoText: {fileID: 1832222423}
+  VidaEnemigoDescripcion: {fileID: 588980961}
+--- !u!4 &1315652103
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315652101}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.360369, y: -0.09195542, z: 1.9266866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1329739045
 PrefabInstance:
   m_ObjectHideFlags: 0

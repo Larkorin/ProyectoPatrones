@@ -5,22 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    
+    public GameObject Lorem;
+    public GameObject Menu;
     public void BotonIncio()
     {
-        SceneManager.LoadScene("Maps");
+        
+        Lorem.SetActive(true);
+        Menu.SetActive(false);
+        
     }
 
     
     public void BotonSalir()
     {
-        Debug.Log("Salimos de la aplicación");
-            Application.Quit();
+       Application.Quit();
     }
+
 
 
     public void BotonRegresar()
     {
         SceneManager.LoadScene("MenuPrincipal");
+    }
+
+    public void BotonSaltar()
+    {
+        SceneManager.LoadScene("Maps");
     }
 }

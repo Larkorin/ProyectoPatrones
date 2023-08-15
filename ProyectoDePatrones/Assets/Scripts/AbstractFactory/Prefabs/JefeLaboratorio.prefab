@@ -705,7 +705,6 @@ GameObject:
   - component: {fileID: 4777338491791730756}
   - component: {fileID: 2245715016579674413}
   - component: {fileID: 4504916514442469723}
-  - component: {fileID: 4127051467527423578}
   m_Layer: 13
   m_Name: JefeLaboratorio
   m_TagString: Enemigo
@@ -900,20 +899,6 @@ MonoBehaviour:
   speed: 1.6
   attackRange: 1.1
   rb: {fileID: 0}
---- !u!114 &4127051467527423578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2175518728740902882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b1d8659bf8facd44a6f1ae66ddc5820, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  VidaEnemigoText: {fileID: 0}
-  VidaEnemigoDescripcion: {fileID: 0}
 --- !u!1 &2187042111964294045
 GameObject:
   m_ObjectHideFlags: 0

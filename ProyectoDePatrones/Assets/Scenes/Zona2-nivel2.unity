@@ -20587,7 +20587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096554681}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.4, y: 2.5, z: 0}
+  m_LocalPosition: {x: -89.22, y: -0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24504,7 +24504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8709bc7fc2909354c8c3ed7a9007bd20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverText: {fileID: 0}
+  gameOverText: {fileID: 2130468583}
   isGameOver: 0
   enemigosConfiguration: {fileID: 11400000, guid: da3e85dfca74b304c821dde252047ccf, type: 2}
 --- !u!4 &1649962081
@@ -27819,7 +27819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: 0, y: -371}
   m_SizeDelta: {x: 900, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!61 &2130468585
