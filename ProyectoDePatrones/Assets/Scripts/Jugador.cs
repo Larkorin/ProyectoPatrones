@@ -143,14 +143,14 @@ public class Jugador : MonoBehaviour
 
         if (collision.gameObject.tag =="Rana" || collision.gameObject.tag == "Dog" || collision.gameObject.tag == "Aguila" || collision.gameObject.tag == "Extraterrestre")
         {
-            Debug.Log(vidas);
+
             vidas = vidas - 5;
             sliderVidas.value = vidas;
         }
 
         if (collision.gameObject.tag == "Enemigo")
         {
-            Debug.Log(vidas);
+    
             vidas = vidas - 10;
             sliderVidas.value = vidas;
         }
