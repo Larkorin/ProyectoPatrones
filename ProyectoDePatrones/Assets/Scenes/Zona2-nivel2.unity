@@ -20926,6 +20926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b38852e0c6a6e84089f39d252f5fc43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3
   _rb2D: {fileID: 1096554685}
   groundCheck: {fileID: 1624781084}
   groundLayer:
@@ -24743,6 +24744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 2130468583}
+  jugador: {fileID: 1096554681}
   isGameOver: 0
   enemigosConfiguration: {fileID: 11400000, guid: da3e85dfca74b304c821dde252047ccf, type: 2}
 --- !u!4 &1649962081

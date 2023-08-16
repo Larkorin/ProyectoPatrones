@@ -35,8 +35,6 @@ public class GestorPrototypeEnemigos : MonoBehaviour
 
     private void nuevoEnemigo()
     {
-        //Debug.Log("Rana: " + enemigoRana.descripcion + " - Vida: " + enemigoRana.cantidadVida+" daño: "+enemigoRana.habilidad.cantidadDannio);
-        //Debug.Log("Aguila: " + enemigoAguila.descripcion + " - Vida: " + enemigoAguila.cantidadVida + " daño: " + enemigoAguila.habilidad.cantidadDannio);
 
         int selectEnemigoRandom=Random.Range(0,_enemigos.Length);
 
@@ -69,7 +67,6 @@ public class GestorPrototypeEnemigos : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("sword"))
-            Debug.Log("lo toco y aqui tengo que destruir");
+        if (collision.CompareTag("sword")) ;
     }
 }

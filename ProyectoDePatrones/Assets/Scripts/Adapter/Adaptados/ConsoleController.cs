@@ -18,10 +18,7 @@ namespace Assets.Scripts.Adapter.Adaptados
 
         public bool PresionarSaltar()
         {
-            if(Input.GetKeyDown(KeyCode.Joystick1Button0)) //Revisa si se esta presionando el boton cuadrado en un control de playstation o la X en un control de xbox
-            {
-                Debug.Log("Preisono boton x");
-            }
+           
             return Input.GetKeyDown(KeyCode.Joystick1Button0); //Revisa si se esta presionando el boton cuadrado en un control de playstation o la X en un control de xbox
         }
 

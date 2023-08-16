@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     //Va manejar el mensaje de texto de game over, reiniciar el nivel, actualizar puntajes y todo
     //aquello relacionado con el seguimiento del juego en una sola instancia
     [SerializeField] private GameObject gameOverText;
+    [SerializeField] private GameObject jugador;
     public bool isGameOver;
 
     //Patron FABRICA ABSTRACTA:
@@ -70,8 +71,9 @@ public class GameManager : MonoBehaviour
 
         isGameOver = true;
         gameOverText.SetActive(true);
-    
-    }
+
+        jugador.GetComponent<Jugador>().DestruirJugador();
+    }   
 
     private void RestartGame()
     {
