@@ -3,7 +3,6 @@ using Assets.Scripts.Adapter.Adaptados;
 using Assets.Scripts.Decorator;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Playables;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -130,6 +129,8 @@ public class Jugador : MonoBehaviour
         if (collision.CompareTag("LimiteInferior"))
         {
             GameManager.Instance.GameOver();
+            Destroy(this.gameObject);
+
         }
 
         if (collision.CompareTag("TextoBoss"))

@@ -7304,7 +7304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859479323}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.3, y: -0.76, z: 0}
+  m_LocalPosition: {x: -17.4, y: -0.76, z: 0}
   m_LocalScale: {x: 2.0293062, y: 2.1553202, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10117,7 +10117,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412910578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.044354, y: -0.91859984, z: -10}
+
+  m_LocalPosition: {x: -15.144355, y: -0.91859984, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11741,7 +11742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logicaCambioEscena: {fileID: 1113938770}
-  indiceNivel: 11
+  indiceNivel: 9
   banderas: {fileID: 1826485126}
 --- !u!4 &1939031291
 Transform:

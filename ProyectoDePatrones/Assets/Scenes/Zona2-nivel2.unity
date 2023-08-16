@@ -5596,7 +5596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logicaCambioEscena: {fileID: 1073212148}
-  indiceNivel: 7
+  indiceNivel: 6
   banderas: {fileID: 1832006923}
 --- !u!4 &887017976
 Transform:

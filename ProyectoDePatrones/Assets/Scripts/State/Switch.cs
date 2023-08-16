@@ -4,7 +4,6 @@ using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 namespace Assets.Scripts.State
 {

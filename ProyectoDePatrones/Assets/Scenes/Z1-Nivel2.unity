@@ -5594,7 +5594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logicaCambioEscena: {fileID: 1856090037}
-  indiceNivel: 6
+  indiceNivel: 5
   banderas: {fileID: 1004032399}
 --- !u!1001 &460870754
 PrefabInstance:
