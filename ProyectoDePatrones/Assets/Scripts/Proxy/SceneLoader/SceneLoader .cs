@@ -34,9 +34,6 @@ public class SceneLoader : MonoBehaviour, ISceneLoader
 
 
         {
-            Debug.Log("llego");
-
-            Debug.Log(indiceNivel);
              CambiarNivel(indiceNivel);
 
         }

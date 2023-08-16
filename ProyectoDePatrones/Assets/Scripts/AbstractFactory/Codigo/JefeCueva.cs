@@ -34,16 +34,13 @@ namespace Assets.Scripts.AbstractFactory
 
         public override void Run() //Funcion de correr
         {
-            // Obtenemos la referencia al componente Rigidbody2D
             rb = GetComponent<Rigidbody2D>();
 
-            // Resto del código de movimiento que tenías en BossRun
             LookAtPlayer();
             Vector2 target = new Vector2(player.position.x, rb.position.y);
             Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
             rb.MovePosition(newPos);
 
-            // Restablecemos la variable isAttacking para permitir otro ataque
             isAttacking = false;
         }
 
@@ -54,7 +51,6 @@ namespace Assets.Scripts.AbstractFactory
         }
         void Start()
         {
-            // Buscar el GameObject con la etiqueta "Player" y obtener su transform.
             player = GameObject.FindGameObjectWithTag("Player").transform;
 
             rb = GetComponent<Rigidbody2D>();

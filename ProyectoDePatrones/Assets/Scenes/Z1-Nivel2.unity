@@ -4102,6 +4102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 355697531}
+  jugador: {fileID: 1637905769}
   isGameOver: 0
   enemigosConfiguration: {fileID: 11400000, guid: da3e85dfca74b304c821dde252047ccf, type: 2}
 --- !u!4 &347096944
@@ -7216,7 +7217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28228f9985ffde747af9e4918ef70109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoMax: 180
+  tiempoMax: 60
   slider: {fileID: 100025522}
   _gameManager: {fileID: 347096943}
   _observadorTime: {fileID: 852565063}
@@ -18080,6 +18081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b38852e0c6a6e84089f39d252f5fc43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 4
   _rb2D: {fileID: 1637905772}
   groundCheck: {fileID: 1650199198}
   groundLayer:

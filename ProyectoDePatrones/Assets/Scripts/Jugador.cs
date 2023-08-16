@@ -15,7 +15,7 @@ public class Jugador : MonoBehaviour
     private Animator animator; // Variable para asignar animaciones al jugador
 
     private float horizontal;
-    private float speed = 3f;
+    public float speed = 3f;
     private float jumpingPower = 7f;
     private bool isFacingRight = false;
     private ConsoleController consoleController;
@@ -129,7 +129,7 @@ public class Jugador : MonoBehaviour
         if (collision.CompareTag("LimiteInferior"))
         {
             GameManager.Instance.GameOver();
-            Destroy(this.gameObject);
+            DestruirJugador();
 
         }
 
@@ -159,11 +159,17 @@ public class Jugador : MonoBehaviour
         if (vidas == 0)
         {
             GameManager.Instance.GameOver();
-            Destroy(this.gameObject);
+            DestruirJugador();      
         }
 
 
     }
 
- 
+    public void DestruirJugador()
+    {
+        Destroy(this.gameObject);
+
+    }
+
+
 }

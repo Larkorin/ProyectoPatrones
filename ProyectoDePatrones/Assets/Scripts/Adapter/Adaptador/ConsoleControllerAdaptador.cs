@@ -24,18 +24,6 @@ namespace Assets.Scripts.Adapter
 
         public float GetHorizontalInput()
         {
-            //if (this.consoleController.JoystickHorizontal() == 0)
-            //{
-            //    Debug.Log("Neutro Joystick");
-            //}
-            //else if (this.consoleController.JoystickHorizontal() > 0)
-            //{
-            //    Debug.Log("Derecha");
-            //}
-            //else if (this.consoleController.JoystickHorizontal() < 0)
-            //{
-            //    Debug.Log("Izquierda");
-            //}
 
             return this.consoleController.JoystickHorizontal();
         }

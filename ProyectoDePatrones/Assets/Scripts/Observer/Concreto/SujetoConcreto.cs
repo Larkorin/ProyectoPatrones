@@ -19,7 +19,6 @@ public class SujetoConcreto : ISujeto
 
     public SujetoConcreto() { 
         _observador=new List<IObservador>();
-        //tiempo= 100;
         tiempoAct = 0;
         tiempoActivo=false;
         notifyObservers();
@@ -41,12 +40,6 @@ public class SujetoConcreto : ISujeto
         }
     }
 
-    //public void aplicarTiempo(int time)
-    //{
-    //    tiempoAct -= time;
-    //    notifyObservers();
-    //}
-
     public void actualizaTemporizador(UnityEngine.UI.Slider slider, GameManager gameManager)
     {
         tiempoAct -= Time.deltaTime;
@@ -62,7 +55,6 @@ public class SujetoConcreto : ISujeto
             mensaje = "El Tiempo se Terminó";
             notifyObservers();
             actualizaEstadoTemp(false);
-            //gameManager = new GameManager();
             gameManager.GameOver();
         }
 
