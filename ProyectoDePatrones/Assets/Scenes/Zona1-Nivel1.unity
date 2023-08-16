@@ -7143,6 +7143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b38852e0c6a6e84089f39d252f5fc43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3
   _rb2D: {fileID: 859479325}
   groundCheck: {fileID: 1555368365}
   groundLayer:
@@ -11742,7 +11743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logicaCambioEscena: {fileID: 1113938770}
-  indiceNivel: 9
+  indiceNivel: 10
   banderas: {fileID: 1826485126}
 --- !u!4 &1939031291
 Transform:
